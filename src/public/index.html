@@ -7,7 +7,17 @@
     <title>Cloud Notes</title>
   </head>
   <body>
-    <h1>app</h1>
-    <p>this is a test app</p>
+    <form id="noteForm">
+      <input id="title" type="text" />
+
+      <textarea id="description" rows="3"></textarea>
+
+      <button>Send</button>
+    </form>
+
+    <ul id="notes"></ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
